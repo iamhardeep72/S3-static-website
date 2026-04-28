@@ -3,15 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecProject - Static Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Security Dashboard</title>
 </head>
-<body>
-    <div class="container">
-        <h1>Security Dashboard</h1>
-        <p>Status: <span id="status">Scanning...</span></p>
-        <button onclick="checkSystem()">Run System Check</button>
+
+<body style="margin:0; font-family:Arial, sans-serif; background:#0f172a; color:#f1f5f9;">
+
+    <div style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+    ">
+
+        <div style="
+            background:#1e293b;
+            padding:30px;
+            border-radius:12px;
+            width:320px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,0.4);
+        ">
+
+            <h1 style="margin-bottom:20px;">🔐 Security Dashboard</h1>
+
+            <p style="font-size:18px;">
+                Status: 
+                <span style="color:#facc15; font-weight:bold;">
+                    Idle
+                </span>
+            </p>
+
+            <button style="
+                margin-top:15px;
+                padding:10px 20px;
+                border:none;
+                border-radius:6px;
+                background:#22c55e;
+                color:white;
+                font-size:16px;
+                cursor:pointer;
+            ">
+                Run System Check
+            </button>
+
+            <div style="
+                margin-top:20px;
+                background:#020617;
+                padding:10px;
+                border-radius:6px;
+                font-size:13px;
+                text-align:left;
+            ">
+                • Logs will appear here...<br>
+                • No active scans<br>
+                • System ready
+            </div>
+
+        </div>
+
     </div>
-    <script src="script.js"></script>
+
 </body>
 </html>
